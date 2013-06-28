@@ -1,0 +1,133 @@
+#content
+{
+	margin: 0 auto;
+	text-align: left;
+	width: 777px;
+}
+#secondarycontent
+{
+	float: right;
+	width: 220;
+}
+#secondarycontent ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#secondarycontent .box
+{
+	background: url('bottom-left.gif') no-repeat left bottom;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 210px;
+}
+#secondarycontent .box-outer
+{
+	background: url('bottom-right.gif') no-repeat right bottom;
+	padding-bottom: 2px;
+}
+#secondarycontent .box-inner
+{
+	background: url('top-left.gif') no-repeat left top;
+}
+#secondarycontent .box h2
+{
+	background: url('top-right.gif') no-repeat right top;
+	padding-top: 10px;
+	text-align: center;
+}
+#secondarycontent .box p
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+#secondarycontent .box h2, .box p
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#secondarycontent .box a
+{
+	background: url('forward.gif') no-repeat left;
+	color: #045D99;
+	margin-left: 15px;
+	padding-left: 50px;
+}
+#secondarycontent .box a:hover
+{
+	color: #990000;
+}
+#maincontent
+{
+	float: left;
+	width: 525px;
+}
+#maincontent #links ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 20px 0;
+	width: 520px;
+}
+#maincontent #links li
+{
+	border-bottom: 1px dotted #990000;
+	border-top: 1px dotted #990000;
+	margin: 5px;
+}
+#maincontent #links li .online
+{
+	background: url('computer.gif') no-repeat left;
+}
+#maincontent #links li .users
+{
+	background: url('users.gif') no-repeat left;
+}
+#maincontent #links li .ipods
+{
+	background: url('ipod.gif') no-repeat left;
+}
+#maincontent #links li .iphones
+{
+	background: url('iphone.gif') no-repeat left;
+}
+#maincontent #links li .leitner
+{
+	background: url('leitner.gif') no-repeat left;
+}
+#maincontent #links li a
+{
+	color: #990000;
+	display: block;
+	font: bold 120% Arial, Helvetica, sans-serif;
+	padding: 5px 5px 5px 60px;
+	text-decoration: none;
+}
+* html #maincontent #links li a
+{
+	width: 480px;
+}
+#maincontent #links li a:hover
+{
+	color: #045D99;
+}
+#maincontent #links a h1
+{
+	color: #333;
+	display: block;
+	font: normal 85% Verdana, Helvetica, sans-serif;
+	line-height: 150%;
+	margin: 0;
+}
+#maincontent #links a span
+{
+	color: #125F15;
+	font: normal 70% Verdana, Helvetica, sans-serif;
+	line-height: 150%;
+}
+#maincontent img
+{
+	margin-left: 205px;
+}

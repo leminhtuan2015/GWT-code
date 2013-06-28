@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /*game=
+Disallow: /*category=
+User-agent: Googlebot
+Noindex: /*game=
+Noindex: /*category=
+

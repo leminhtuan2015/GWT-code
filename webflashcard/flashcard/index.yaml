@@ -1,0 +1,6 @@
+indexes:
+- kind: FlashCardDB
+  properties:
+  - name: userid
+  - name: __key__
+    direction: desc

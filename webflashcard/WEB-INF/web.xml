@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>postback</servlet-name>
+    <servlet-class>superflashcard.server.LeadBoltPostBackServiceImpl</servlet-class>
+  </servlet>  
+ <servlet-mapping>
+    <servlet-name>postback</servlet-name>
+    <url-pattern>/superflashcard/postback</url-pattern>
+  </servlet-mapping> 
+
+ 
+  
+  <servlet>
+    <servlet-name>flexServlet</servlet-name>
+    <servlet-class>superflashcard.server.FlexRemoteServiceImpl</servlet-class>
+  </servlet>  
+ <servlet-mapping>
+    <servlet-name>flexServlet</servlet-name>
+    <url-pattern>/superflashcard/flex</url-pattern>
+  </servlet-mapping> 
+
+
+   <servlet>
+    <servlet-name>mobileServlet</servlet-name>
+    <servlet-class>superflashcard.server.MobileRemoteServiceImpl</servlet-class>
+  </servlet>  
+ <servlet-mapping>
+    <servlet-name>mobileServlet</servlet-name>
+    <url-pattern>/superflashcard/mobile</url-pattern>
+  </servlet-mapping> 
+     
+ <servlet>
+    <servlet-name>multigameService</servlet-name>
+    <servlet-class>superflashcard.server.MultiplayerGameServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>multigameService</servlet-name>
+    <url-pattern>/superflashcard/multigame</url-pattern>
+  </servlet-mapping>
+
+  
+ <servlet>
+    <servlet-name>loginService</servlet-name>
+    <servlet-class>superflashcard.server.LoginServiceImpl</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>loginService</servlet-name>
+    <url-pattern>/superflashcard/login</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>CardSetService</servlet-name>
+    <servlet-class>superflashcard.server.CardSetServiceImpl</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>CardSetService</servlet-name>
+    <url-pattern>/superflashcard/cardset</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>exportxml</servlet-name>
+  <servlet-class>superflashcard.server.CardSetExporterServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+  <servlet-name>exportxml</servlet-name>
+  <url-pattern>/superflashcard/exportxml</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>uploadefile</servlet-name>
+  <servlet-class>superflashcard.server.FileUpload</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+  <servlet-name>uploadefile</servlet-name>
+  <url-pattern>/superflashcard/uploadfile</url-pattern>
+</servlet-mapping>
+
+	<servlet>
+		<servlet-name>userImageServlet</servlet-name>
+		<servlet-class>superflashcard.server.UserImageServiceImpl</servlet-class>
+	</servlet>	
+
+	<servlet-mapping>
+		<servlet-name>userImageServlet</servlet-name>
+		<url-pattern>/superflashcard/images</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+    <servlet-name>openIdLogin</servlet-name>
+    <servlet-class>superflashcard.server.login.LoginServlet</servlet-class>
+  </servlet>  
+ <servlet-mapping>
+    <servlet-name>openIdLogin</servlet-name>
+    <url-pattern>/openidlogin</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>openIdLoginReturn</servlet-name>
+    <servlet-class>superflashcard.server.login.OpenIdLoginServlet</servlet-class>
+  </servlet>  
+ <servlet-mapping>
+    <servlet-name>openIdLoginReturn</servlet-name>
+    <url-pattern>/openidloginreturn</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>openIdLoginYahooCallback</servlet-name>
+    <servlet-class>superflashcard.server.login.OpenIdYahooServlet</servlet-class>
+  </servlet>  
+ <servlet-mapping>
+    <servlet-name>openIdLoginYahooCallback</servlet-name>
+    <url-pattern>/openidloginyahoocallback</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginfacebook</servlet-name>
+    <servlet-class>superflashcard.server.login.LoginFacebookServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginfacebook</servlet-name>
+    <url-pattern>/loginfacebook</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logintwitter</servlet-name>
+    <servlet-class>superflashcard.server.login.LoginTwitterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>logintwitter</servlet-name>
+    <url-pattern>/logintwitter</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+    <servlet-name>twittercallback</servlet-name>
+    <servlet-class>superflashcard.server.login.TwitterCallBackServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>twittercallback</servlet-name>
+    <url-pattern>/twittercallback</url-pattern>
+  </servlet-mapping>  
+  
+	  <servlet>
+	    <servlet-name>singleImageUploadServlet</servlet-name>
+	    <servlet-class>superflashcard.server.mediaupload.SingleImageUploadServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>singleImageUploadServlet</servlet-name>
+	    <url-pattern>/superflashcard/imageupload</url-pattern>
+	  </servlet-mapping>  
+	  
+	  <servlet>
+	    <servlet-name>soundUploadServlet</servlet-name>
+	    <servlet-class>superflashcard.server.mediaupload.SoundUploadServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>soundUploadServlet</servlet-name>
+	    <url-pattern>/superflashcard/soundupload</url-pattern>
+	  </servlet-mapping>  
+  
+	<servlet>
+		<servlet-name>imageProcessingReq</servlet-name>
+		<servlet-class>superflashcard.server.mediaupload.ImageProcessingReqServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>imageProcessingTask</servlet-name>
+		<servlet-class>superflashcard.server.mediaupload.ImageProcessingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>imageProcessingReq</servlet-name>
+		<url-pattern>/imageProcessingReq</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>imageProcessingTask</servlet-name>
+		<url-pattern>/imageProcessingTask</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>soundProcessingReq</servlet-name>
+		<servlet-class>superflashcard.server.mediaupload.SoundProcessingReqServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>soundProcessingTask</servlet-name>
+		<servlet-class>superflashcard.server.mediaupload.SoundProcessingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>soundProcessingReq</servlet-name>
+		<url-pattern>/soundProcessingReq</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>soundProcessingTask</servlet-name>
+		<url-pattern>/soundProcessingTask</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+    <servlet-name>activate</servlet-name>
+    <servlet-class>superflashcard.server.login.AccountActivationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>activate</servlet-name>
+    <url-pattern>/activate</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+    <servlet-name>paypalExpress</servlet-name>
+    <servlet-class>superflashcard.server.paypal.ExpressCheckout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>paypalExpress</servlet-name>
+    <url-pattern>/paypalExpress</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+    <servlet-name>amazon</servlet-name>
+    <servlet-class>superflashcard.server.ItemSuggestServiceImpl</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>amazon</servlet-name>
+    <url-pattern>/superflashcard/amazon</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>testamazon</servlet-name>
+    <servlet-class>superflashcard.server.amazon.AmazonRemoteServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>testamazon</servlet-name>
+    <url-pattern>/superflashcard/testamazon</url-pattern>
+  </servlet-mapping>  
+  
+  
+<servlet>
+  <servlet-name>gwtServlet</servlet-name>
+  <servlet-class>superflashcard.server.CustomRequestFactoryServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>gwtServlet</servlet-name>
+  <url-pattern>/gwtRequest</url-pattern>
+</servlet-mapping>     
+  
+  
+<servlet>
+  <servlet-name>xsrf</servlet-name>
+  <servlet-class>
+    com.google.gwt.user.server.rpc.XsrfTokenServiceServlet
+  </servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>xsrf</servlet-name>
+  <url-pattern>/superflashcard/xsrf</url-pattern>
+</servlet-mapping>
+
+
+
+<context-param>
+  <param-name>gwt.xsrf.session_cookie_name</param-name>
+  <param-value>JSESSIONID</param-value>
+</context-param>  
+
+<context-param>
+    <param-name>maxSize</param-name>
+    <param-value>5145728</param-value>
+</context-param>
+  <context-param>
+    <param-name>slowUploads</param-name>
+    <param-value>0</param-value>
+  </context-param>
+<session-config>
+    <session-timeout>1440</session-timeout>
+ </session-config>
+
+ <!--
+
+	<filter>
+		<filter-name>appstats</filter-name>
+		<filter-class>com.google.appengine.tools.appstats.AppstatsFilter</filter-class>
+		<init-param>
+			<param-name>logMessage</param-name>
+			<param-value>Appstats available: /appstats/details?time={ID}</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>appstats</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+-->
+
+	<servlet>
+		<servlet-name>appstats</servlet-name>
+		<servlet-class>com.google.appengine.tools.appstats.AppstatsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appstats</servlet-name>
+		<url-pattern>/appstats/*</url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/appstats/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<filter>
+		<filter-name>AjaxCrawlFilter</filter-name>
+		<filter-class>superflashcard.server.AjaxCrawlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AjaxCrawlFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	 <servlet>
+	  <servlet-name>exportSiteMap</servlet-name>
+	  <servlet-class>superflashcard.server.SiteMapExporterServlet</servlet-class>
+	</servlet>
+	 
+	<servlet-mapping>
+	  <servlet-name>exportSiteMap</servlet-name>
+	  <url-pattern>/superflashcard/exportSiteMap</url-pattern>
+	</servlet-mapping>
+
+
+	
+<servlet>
+      <servlet-name>bhfacebook</servlet-name>
+      <servlet-class>superflashcard.server.FacebookServlet</servlet-class>
+    </servlet>
+     
+    <servlet-mapping>
+      <servlet-name>bhfacebook</servlet-name>
+      <url-pattern>/superflashcard/bhfacebook</url-pattern>
+    </servlet-mapping>	
+	
+	 <servlet>
+	  <servlet-name>fbcallback</servlet-name>
+	  <servlet-class>superflashcard.server.FBCallbackServlet</servlet-class>
+	</servlet>
+	 
+	<servlet-mapping>
+	  <servlet-name>fbcallback</servlet-name>
+	  <url-pattern>/superflashcard/fbcallback</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>playSound</servlet-name>
+		<servlet-class>superflashcard.server.mediaupload.SoundServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>playSound</servlet-name>
+		<url-pattern>/superflashcard/playSound</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>autoGetVocabData</servlet-name>
+		<servlet-class>superflashcard.server.AutoImportLanguageDataServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>autoGetVocabData</servlet-name>
+		<url-pattern>/autoGetData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>userstatistic</servlet-name>
+		<servlet-class>superflashcard.server.StatisticServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>userstatistic</servlet-name>
+		<url-pattern>/userstatistic</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cardsetstatistic</servlet-name>
+		<servlet-class>superflashcard.server.CardsetStatisticServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cardsetstatistic</servlet-name>
+		<url-pattern>/superflashcard/cardsetstatistic</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>printcardset</servlet-name>
+		<servlet-class>superflashcard.server.PrintServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>printcardset</servlet-name>
+		<url-pattern>/superflashcard/print</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>genHtml</servlet-name>
+		<servlet-class>superflashcard.server.GenerateHTMLFile</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>genHtml</servlet-name>
+		<url-pattern>/set</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sendRemindExpiredEmail</servlet-name>
+		<servlet-class>superflashcard.server.AutoSendReminderEmail</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>sendRemindExpiredEmail</servlet-name>
+		<url-pattern>/remindexpied</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+	    <servlet-name>RemoteApi</servlet-name>
+	    <servlet-class>com.google.apphosting.utils.remoteapi.RemoteApiServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+	    <servlet-name>RemoteApi</servlet-name>
+	    <url-pattern>/remote_api</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Utils</servlet-name>
+		<servlet-class>superflashcard.server.ServerUtils</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Utils</servlet-name>
+		<url-pattern>/utils</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddMoreDB</servlet-name>
+		<servlet-class>superflashcard.server.AutoDownloadDBServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddMoreDB</servlet-name>
+		<url-pattern>/addmoredb</url-pattern>
+	</servlet-mapping> -->
+	
+</web-app>

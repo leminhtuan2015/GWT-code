@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queue-entries>
+<queue>
+<name>default</name>
+<rate>5/s</rate>
+</queue>
+<queue>
+<name>image-processing-queue</name>	<!-- queue name -->
+<rate>5/s</rate>					<!-- number of tasks that can be processed per second -->
+</queue>
+<queue>
+<name>sound-processing-queue</name>	<!-- queue name -->
+<rate>5/s</rate>					<!-- number of tasks that can be processed per second -->
+</queue>
+</queue-entries>

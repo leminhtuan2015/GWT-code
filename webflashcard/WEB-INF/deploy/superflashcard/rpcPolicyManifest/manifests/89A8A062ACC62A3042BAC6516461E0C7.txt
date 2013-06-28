@@ -1,0 +1,2 @@
+serviceClass: superflashcard.client.LoginService
+path: C506A1352E028388A733EF4BFAE57779.gwt.rpc

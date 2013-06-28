@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <cronentries>
+   <cron>
+    <url>/userstatistic</url>
+    <description>User statistic</description>
+    <schedule>every day 23:30</schedule>
+    <timezone>America/New_York</timezone>
+  </cron>
+   <cron>
+    <url>/remindexpied</url>
+    <description>Auto send reminder email</description>
+    <schedule>every day 3:30</schedule>
+    <timezone>America/New_York</timezone>
+  </cron>
+</cronentries>

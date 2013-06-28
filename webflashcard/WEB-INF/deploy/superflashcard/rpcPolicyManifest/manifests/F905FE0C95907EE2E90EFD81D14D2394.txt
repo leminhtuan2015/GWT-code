@@ -1,0 +1,2 @@
+serviceClass: superflashcard.client.ItemSuggestService
+path: BAFBA9F98CB62D8EF9E9D013D49CC871.gwt.rpc

@@ -1,0 +1,142 @@
+package superflashcard.server.websearch;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import superflashcard.shared.CardSet;
+import superflashcard.shared.Config;
+
+import com.google.appengine.repackaged.com.google.common.util.Base64;
+import com.google.gson.Gson;
+
+public class BingSearch {
+	public List<CardSet> search(String keyWord, int top,
+			int resultSkip) {
+		List<CardSet> shortResults = new ArrayList<CardSet>();
+		bingSearch(keyWord, "quizlet.com", shortResults, top, resultSkip);
+		bingSearch(keyWord, "proprofs.com", shortResults, top, resultSkip);
+		bingSearch(keyWord, "studystack.com", shortResults, top, resultSkip);
+		bingSearch(keyWord, "flashcarddb.com", shortResults, top, resultSkip);
+		bingSearch(keyWord, "flashcardexchange.com", shortResults, top, resultSkip);
+		bingSearch(keyWord, "flashcardmachine.com", shortResults, top, resultSkip);
+		bingSearch(keyWord, "coursehero.com", shortResults, top, resultSkip);
+		return shortResults;
+	}
+	
+	private void bingSearch(String keyWord, String site,
+			List<CardSet> shortResults, int top, int resultSkip) {
+
+		String rootUrl = "https://api.datamarket.azure.com/Data.ashx/Bing/SearchWeb/Web?Query=";
+		String format = "&$top=" + top + "&$skip=" + resultSkip + "&$format=JSON";
+		keyWord = keyWord + " site:" + site;
+		keyWord = urlEncode(keyWord);
+
+		String bingUrl = rootUrl + "%27" + keyWord + "%27" + format;
+
+		List<String> accountKey = new ArrayList<String>();
+		//accountKey.add("aeUyPpilhp7glRW7bMv7Je68A3VCARLDttpIJ2ZDy7w=");
+		accountKey.add("Sqk1SYsSl9lYBecqlLsbfXQOTaJavCxlK4V8gNx5usU=");
+
+		URL url;
+		String content = "";
+
+		try {
+
+			int i = -1;
+			do {
+				i++;
+				StringBuffer buffer = new StringBuffer();
+				url = new URL(bingUrl);
+				HttpURLConnection conn = (HttpURLConnection) url
+						.openConnection();
+				conn.setConnectTimeout(60000);
+				setBasicAuth(conn, "", accountKey.get(i));
+				InputStream is = conn.getInputStream();
+				InputStreamReader ir = new InputStreamReader(is, "UTF-8");
+				Reader in = new BufferedReader(ir);
+
+				int ch;
+				while ((ch = in.read()) > -1) {
+					buffer.append((char) ch);
+				}
+				in.close();
+				content = buffer.toString();
+				//System.out.println(content);
+			} while (i < accountKey.size()
+					&& (content.contains("Your account has run out of transactions for this subscribed dataset")
+						|| content.contains("You do not have permission to view this directory")));
+			Gson gson = new Gson();
+			BingSearchResult bingSearchResult = gson.fromJson(content,
+					BingSearchResult.class);
+			List<BingResult> results = bingSearchResult.getD().getResults();
+			for (BingResult bingResult : results) {
+				if (WebSupport.isSupportUrl(bingResult.getUrl())) {
+					CardSet cardset = new CardSet(bingResult.getTitle(),
+							bingResult.getDescription(), "Uncategorized", 
+							Config.NULL_ID, 1, 0.0, 0);
+					cardset.setUrl(bingResult.getUrl());
+					shortResults.add(cardset);
+				}
+				System.out.println("Bing search from " + site + ": " + shortResults.size());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void setBasicAuth(HttpURLConnection connection,
+			String username, String password) {
+		StringBuilder buf = new StringBuilder(username);
+		buf.append(':');
+		buf.append(password);
+		byte[] bytes = null;
+		try {
+			bytes = buf.toString().getBytes("ISO-8859-1");
+		} catch (java.io.UnsupportedEncodingException uee) {
+			assert false;
+		}
+
+		String header = "Basic " + Base64.encode(bytes);
+		connection.setRequestProperty("Authorization", header);
+	}	
+	
+	public String urlEncode(String keyWord) {
+		keyWord = keyWord.replace("%", "%25");
+		keyWord = keyWord.replace(" ", "%20");
+		keyWord = keyWord.replace("~", "%7e");
+		keyWord = keyWord.replace("!", "%21");
+		keyWord = keyWord.replace("@", "%40");
+		keyWord = keyWord.replace("#", "%23");
+		keyWord = keyWord.replace("$", "%24");
+		keyWord = keyWord.replace("^", "%5e");
+		keyWord = keyWord.replace("&", "%26");
+		keyWord = keyWord.replace("*", "%2a");
+		keyWord = keyWord.replace("(", "%28");
+		keyWord = keyWord.replace(")", "%29");
+		keyWord = keyWord.replace("-", "-");
+		keyWord = keyWord.replace("_", "_");
+		keyWord = keyWord.replace("+", "%2b");
+		keyWord = keyWord.replace("{", "%7b");
+		keyWord = keyWord.replace("}", "%7d");
+		keyWord = keyWord.replace("[", "%5b");
+		keyWord = keyWord.replace("]", "%5d");
+		keyWord = keyWord.replace("\\", "%5c");
+		keyWord = keyWord.replace("/", "%2f");
+		keyWord = keyWord.replace("?", "%3f");
+		keyWord = keyWord.replace(">", "%3e");
+		keyWord = keyWord.replace("<", "%3c");
+		keyWord = keyWord.replace(",", "%2c");
+		keyWord = keyWord.replace("\"", "%22");
+		keyWord = keyWord.replace("'", "%27%27'");
+		keyWord = keyWord.replace("|", "%7c");
+		keyWord = keyWord.replace(":", "%3a");
+		keyWord = keyWord.replace(";", "%3b");
+		return keyWord;
+	}	
+}

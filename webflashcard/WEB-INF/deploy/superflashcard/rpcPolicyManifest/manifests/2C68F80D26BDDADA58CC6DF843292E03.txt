@@ -1,0 +1,2 @@
+serviceClass: superflashcard.client.CardSetService
+path: 91B720662532CAE7E031451A74F33E72.gwt.rpc

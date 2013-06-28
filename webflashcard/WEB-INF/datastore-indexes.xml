@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes
+  autoGenerate="true">
+
+<!--
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="userid" direction="asc" />
+        <property name="title" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="userid" direction="asc" />
+        <property name="title" direction="desc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="shared" direction="asc" />
+        <property name="lowercaseTitle" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="shared" direction="asc" />
+        <property name="lowercaseTitle" direction="desc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="shared" direction="asc" />
+        <property name="lowercaseFolderName" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="shared" direction="asc" />
+        <property name="lowercaseFolderName" direction="desc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="shared" direction="asc" />
+        <property name="createddate" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="userid" direction="asc" />
+        <property name="createddate" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="userid" direction="asc" />
+        <property name="createddate" direction="desc" />
+    </datastore-index>
+ -->    
+
+    <datastore-index kind="CardSetDB" ancestor="false" source="auto">
+        <property name="shared" direction="asc" />
+        <property name="createddate" direction="desc" />
+    </datastore-index>
+    
+	<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="folderid" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+	<datastore-index kind="FlashCardDB" ancestor="false" source="manual">
+        <property name="cardsetid" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>    
+
+	<datastore-index kind="CommentDB" ancestor="false" source="manual">
+        <property name="cardsetid" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>
+    
+	<datastore-index kind="FolderDB" ancestor="false" source="manual">
+        <property name="folderparent" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+    </datastore-index>    
+    
+    
+   <datastore-index kind="CardSetDB" ancestor="true" source="manual">
+        <property name="cardSets_INTEGER_IDX" direction="asc"/>
+    </datastore-index>  
+    
+   <datastore-index kind="FolderDB" ancestor="true" source="manual">
+        <property name="folders_INTEGER_IDX" direction="asc"/>
+    </datastore-index>   
+   
+<!--   
+   <datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="foldername" direction="asc"/>
+        <property name="userId" direction="asc"/>
+        <property name="__key__" direction="desc"/>
+   </datastore-index> 
+
+   <datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="userId" direction="asc"/>
+        <property name="lowercaseTitle" direction="desc"/>
+    </datastore-index>   
+    
+<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="userId" direction="asc"/>
+        <property name="lowercaseTitle" direction="asc"/>
+    </datastore-index>     
+  -->
+<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="title" direction="asc"/>
+        <property name="imageCardNum" direction="asc"/>
+    </datastore-index>    
+<!--      
+<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="shared" direction="asc"/>
+        <property name="lowerCaseTitle" direction="asc"/>
+    </datastore-index>    
+<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="shared" direction="asc"/>
+        <property name="lowerCaseTitle" direction="desc"/>
+    </datastore-index>
+-->    
+<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="userId" direction="asc"/>
+        <property name="cardNum" direction="asc"/>
+    </datastore-index>    
+    
+<datastore-index kind="CardSetDB" ancestor="false" source="manual">
+        <property name="keywords" direction="asc"/>
+        <property name="imageCardNum" direction="asc"/>
+    </datastore-index>    
+</datastore-indexes>

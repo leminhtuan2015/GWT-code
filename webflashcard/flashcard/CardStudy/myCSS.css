@@ -1,0 +1,5 @@
+.myTabs {
+backgroundColor: #FF0080;
+skin:ClassReference('mx.skins.spark.ButtonSkin');
+chromeColor: #FF0080;  /* this is the tab widget itself, not the content */
+}

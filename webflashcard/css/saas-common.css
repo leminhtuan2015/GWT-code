@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'TertreMedBold';
+
+	src: local('?'), url('fonts/tertre-xbol-webfont.woff') format('woff'), url('fonts/tertre-xbol-webfont.ttf')
+		format('truetype'), url('fonts/tertre-xbol-webfont.svg#webfontDQHphuDm') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #333;
+}
+
+.center {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header,.container,.footer,.proms,.tweets {
+	width: 100%;
+	float: left;
+}
+
+
+.topLinks {
+	float: right;
+	padding: 0px 0px 0px;
+	font-size: 12px;
+}
+
+.topLinks li {
+	padding-left: 13px;
+	margin-left: 8px;
+	display: inline;
+}
+
+.topLinks li+li {
+	background: url("images/sep-toplinks.png") no-repeat left center;
+}
+
+.topLinks a:hover {
+	text-decoration: underline;
+}
+
+
+#fblike {
+	padding-top: 27px;
+}
+#welcome td{
+border-right-width: 0px;
+border-right-style: solid;
+border-right-color: #0a5477;
+padding: 0px 2px;
+}
+
+#logo {
+	float: left;
+	padding-bottom: 0px;
+}
+
+.nav {
+	float: right;
+	margin-top: 20px;
+	font-family: 'TertreMedBold';
+}
+
+.nav li {
+	display: inline;
+	margin-left: 10px;
+}
+
+.nav li a,.nav li a span {
+	display: inline-block;
+	background-image: url("images/bg-nav.png");
+	background-repeat: no-repeat;
+	height: 36px;
+	line-height: 34px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 1px 0 #4f4f4f;
+	font-size: 18px;
+}
+
+.nav li a {
+	padding-left: 15px;
+	background-position: left top;
+}
+
+.nav li a span {
+	padding-right: 15px;
+	background-position: right top;
+}
+
+.nav li a:hover,.nav li.current_page_item a,.nav li.current-page-ancestor a {
+	background-position: left bottom;
+}
+
+.nav li a:hover span,.nav li.current_page_item a span,.nav li.current-page-ancestor a span {
+	background-position: right bottom;
+}
+
+
+
+.alignright,.right {
+	float: right;
+}
+
+.alignleft,.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.v-bt {
+	vertical-align: text-bottom;
+}
+
+.a-center {
+	text-align: center;
+}
+
+.a-right {
+	text-align: right;
+}
+
+a {
+	color: #0a5477;
+	text-decoration: none;
+}
+
+
+ul,ol,li {
+	list-style: none;
+}
+
+
+
+
+
+
+.container {
+	background: url("images/bg-container.gif") repeat-x left top;
+	padding: 15px 0 35px;
+}
+
+
+
+
+.footer .prom {
+	background: url("images/bg-footer-prom.png") repeat-x left top;
+	height: 50px;
+	padding: 20px 0;
+	width: 100%;
+	color: #fff;
+}
+

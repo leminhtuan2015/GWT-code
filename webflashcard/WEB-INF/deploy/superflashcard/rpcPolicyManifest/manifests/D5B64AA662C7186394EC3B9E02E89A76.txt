@@ -1,0 +1,2 @@
+serviceClass: superflashcard.client.UserImageService
+path: 06E56E02031B6ECCD9181693C7313104.gwt.rpc

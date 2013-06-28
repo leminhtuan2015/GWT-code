@@ -1,0 +1,59 @@
+application: catthinh2005
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_ah/login_required
+  script: do_openid_login.py
+  
+- url: /flashcard/
+  static_files: flashcard.html
+  upload: flashcard.html
+  
+- url: /flashcard/flashcard.swf
+  static_files: flashcard.swf
+  upload: flashcard.swf
+
+- url: /create/
+  static_files: cardgenerator.html
+  upload: cardgenerator.html
+  
+- url: /create/CardGenerator.swf
+  static_files: CardGenerator.swf
+  upload: CardGenerator.swf
+  
+- url: /flashcard/framework_4.1.0.16076.swf
+  static_files: framework_4.1.0.16076.swf
+  upload: framework_4.1.0.16076.swf
+  
+- url: /flashcard/textLayout_1.1.0.604.swf
+  static_files: textLayout_1.1.0.604.swf
+  upload: textLayout_1.1.0.604.swf
+  
+- url: /flashcard/osmf_flex.4.0.0.13495.swf
+  static_files: osmf_flex.4.0.0.13495.swf
+  upload: osmf_flex.4.0.0.13495.swf
+  
+- url: /flashcard/playerProductInstall.swf
+  static_files: playerProductInstall.swf
+  upload: playerProductInstall.swf
+  
+- url: /flashcard/spark_4.1.0.16076.swf
+  static_files: spark_4.1.0.16076.swf
+  upload: spark_4.1.0.16076.swf
+ 
+- url: /flashcard/sparkskins_4.1.0.16076.swf
+  static_files: sparkskins_4.1.0.16076.swf
+  upload: sparkskins_4.1.0.16076.swf
+  
+- url: /flashcard/rpc_4.1.0.16076.swf
+  static_files: rpc_4.1.0.16076.swf
+  upload: rpc_4.1.0.16076.swf
+  
+- url: /.*
+  script: saveCard.py
+  
+builtins:
+- datastore_admin: on  
+  

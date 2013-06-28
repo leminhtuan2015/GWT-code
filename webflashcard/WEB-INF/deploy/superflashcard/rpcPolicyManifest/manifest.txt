@@ -1,0 +1,6 @@
+# Module superflashcard
+# RPC service class, partial path of RPC policy file
+superflashcard.client.CardSetService, 91B720662532CAE7E031451A74F33E72.gwt.rpc
+superflashcard.client.LoginService, C506A1352E028388A733EF4BFAE57779.gwt.rpc
+superflashcard.client.UserImageService, 06E56E02031B6ECCD9181693C7313104.gwt.rpc
+superflashcard.client.ItemSuggestService, BAFBA9F98CB62D8EF9E9D013D49CC871.gwt.rpc

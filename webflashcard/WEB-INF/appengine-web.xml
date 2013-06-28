@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>web4edu-hrd</application>
+  <version>test</version>
+
+  <!-- Configure serving/caching of GWT files -->
+  <static-files>
+    <include path="**" />
+	<!--<include path="css/**"/>
+	<include path="images/**"/>
+	<include path="**.jar"/>
+	<include path="**.swf"/>
+	<include path="**.html"/>
+	<include path="**.css"/>
+	<include path="superflashcard/**"/>-->
+
+    <!-- The following line requires App Engine 1.3.2 SDK -->
+    <include path="**.nocache.*" expiration="0s" />
+
+    <include path="**.cache.*" expiration="365d" />
+    <exclude path="**.gwt.rpc" />
+  </static-files>
+
+  <!-- Configure java.util.logging -->
+  <system-properties>
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    <property name="fb_app_id" value="164743756926136" /> 
+    <property name="fb_api_key" value="7e319b5a27eff626267762fa93819cf6" /> 
+    <property name="fb_secret" value="38b5a12519eed0adc139c3c319382567" /> 
+    <property name="fb_callback_url" value="http://127.0.0.1:8888/loginfacebook" />
+    
+    <property name="twitter-consumer-key" value="82LmcGupcPYV4KYgTFqW4Q" /> 
+    <property name="twitter-consumer-secret" value="R2OxYi3BqdxsX42zkDlPDRts4iBeWvtoBBSIRT0" />
+    
+     <property name="datanucleus.maxFetchDepth" value="2"/>
+  </system-properties>
+<sessions-enabled>true</sessions-enabled>
+<threadsafe>true</threadsafe>
+<precompilation-enabled>false</precompilation-enabled>
+<async-session-persistence enabled="true"/>
+<!--  
+ <static-error-handlers>
+    <handler file="default_error.html"/>
+    <handler file="default_error.html" error-code="timeout"/>
+    <handler file="default_error.html" error-code="dos_api_denial"/>    
+    <handler file="over_quota.html" error-code="over_quota"/>
+ </static-error-handlers>
+-->
+</appengine-web-app>

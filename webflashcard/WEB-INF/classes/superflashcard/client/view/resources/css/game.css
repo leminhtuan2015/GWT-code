@@ -1,0 +1,891 @@
+@sprite .gameButtonDescription {
+	border: none;
+	/*background: url('description.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescription';
+}
+
+@sprite .gameButtonDescription:hover {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescriptionActive';
+}
+
+@sprite .gameButtonDescription:active {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescriptionActive';
+}
+
+@sprite .gameButtonActiveDescription {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescriptionActive';
+}
+
+@sprite .gameButtonCardList {
+	border: none;
+	/*background: url('description.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescription';
+}
+
+@sprite .gameButtonCardList:hover {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescriptionActive';
+}
+
+@sprite .gameButtonCardList:active {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescriptionActive';
+}
+
+@sprite .gameButtonActiveCardList {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameDescriptionActive';
+}
+
+@sprite .gameButtonCardBox {
+	border: none;
+	/*background: url('description.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardBox';
+}
+
+@sprite .gameButtonCardBox:hover {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardBoxActive';
+}
+
+@sprite .gameButtonCardBox:active {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardBoxActive';
+}
+
+@sprite .gameButtonActiveCardBox {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardBoxActive';
+}
+
+@sprite .gameButtonCardList {
+	border: none;
+	/*background: url('description.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardList';
+}
+
+@sprite .gameButtonCardList:hover {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardListActive';
+}
+
+@sprite .gameButtonCardList:active {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardListActive';
+}
+
+@sprite .gameButtonActiveCardList {
+	border: none;
+	/*background: url('description-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameCardListActive';
+}
+
+@sprite .gameButtonStudy {
+	border: none;
+	/*background: url('description.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameStudy';
+}
+
+@sprite .gameButtonStudy:hover {
+	border: none;
+	/*background: url('Study-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameStudyActive';
+}
+
+@sprite .gameButtonStudy:active {
+	border: none;
+	/*background: url('Study-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameStudyActive';
+}
+
+@sprite .gameButtonActiveStudy {
+	border: none;
+	/*background: url('Study-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameStudyActive';
+}
+
+@sprite .gameButtonSlideShow {
+	border: none;
+	position: left;
+	gwt-image: 'gameSlideShow';
+}
+
+@sprite .gameButtonSlideShow:hover {
+	border: none;
+	position: left;
+	gwt-image: 'gameSlideShowActive';
+}
+
+@sprite .gameButtonSlideShow:active {
+	border: none;
+	position: left;
+	gwt-image: 'gameSlideShowActive';
+}
+
+@sprite .gameButtonActiveSlideShow {
+	border: none;
+	position: left;
+	gwt-image: 'gameSlideShowActive';
+}
+
+@sprite .gameButtonMatching {
+	border: none;
+	/*background: url('Matching.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMatching';
+}
+
+@sprite .gameButtonMatching:hover {
+	border: none;
+	/*background: url('Matching-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMatchingActive';
+}
+
+@sprite .gameButtonMatching:active {
+	border: none;
+	/*background: url('Matching-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMatchingActive';
+}
+
+@sprite .gameButtonActiveMatching {
+	border: none;
+	/*background: url('Matching-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMatchingActive';
+}
+
+@sprite .gameButtonMemorize {
+	border: none;
+	/*background: url('Memorize.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMemorize';
+}
+
+@sprite .gameButtonMemorize:hover {
+	border: none;
+	/*background: url('Memorize-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMemorizeActive';
+}
+
+@sprite .gameButtonMemorize:active {
+	border: none;
+	/*background: url('Memorize-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMemorizeActive';
+}
+
+@sprite .gameButtonActiveMemorize {
+	border: none;
+	/*background: url('Memorize-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameMemorizeActive';
+}
+
+@sprite .gameButtonQuiz {
+	border: none;
+	/*background: url('Quiz.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameQuiz';
+}
+
+@sprite .gameButtonQuiz:hover {
+	border: none;
+	/*background: url('Quiz-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameQuizActive';
+}
+
+@sprite .gameButtonQuiz:active {
+	border: none;
+	/*background: url('Quiz-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameQuizActive';
+}
+
+@sprite .gameButtonActiveQuiz {
+	border: none;
+	/*background: url('Quiz-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameQuizActive';
+}
+
+@sprite .gameButtonResult {
+	border: none;
+	/*background: url('Result.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameResult';
+}
+
+@sprite .gameButtonResult:hover {
+	border: none;
+	/*background: url('Result-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameResultActive';
+}
+
+@sprite .gameButtonResult:active {
+	border: none;
+	/*background: url('Result-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameResultActive';
+}
+
+@sprite .gameButtonActiveResult {
+	border: none;
+	/*background: url('Result-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameResultActive';
+}
+
+@sprite .gameButtonPrint {
+	border: none;
+	/*background: url('Print.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gamePrint';
+}
+
+@sprite .gameButtonPrint:hover {
+	border: none;
+	/*background: url('Print-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gamePrintActive';
+}
+
+@sprite .gameButtonPrint:active {
+	border: none;
+	/*background: url('Print-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gamePrintActive';
+}
+
+@sprite .gameButtonActivePrint {
+	border: none;
+	/*background: url('Print-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gamePrintActive';
+}
+
+@sprite .demoButtonDemo {
+	border: none;
+	position: left;
+	gwt-image: 'demoDemo';
+}
+
+@sprite .demoButtonStudy {
+	border: none;
+	position: left;
+	gwt-image: 'demoStudy';
+}
+
+@sprite .demoButtonStudy:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoStudyActive';
+}
+
+@sprite .demoButtonSlideShow {
+	border: none;
+	position: left;
+	gwt-image: 'demoSlideShow';
+}
+
+@sprite .demoButtonSlideShow:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoSlideShowActive';
+}
+
+@sprite .demoButtonMatching {
+	border: none;
+	position: left;
+	gwt-image: 'demoMatching';
+}
+
+@sprite .demoButtonMatching:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoMatchingActive';
+}
+
+@sprite .demoButtonMemorize {
+	border: none;
+	position: left;
+	gwt-image: 'demoMemorize';
+}
+
+@sprite .demoButtonMemorize:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoMemorizeActive';
+}
+
+@sprite .demoButtonQuiz {
+	border: none;
+	position: left;
+	gwt-image: 'demoQuiz';
+}
+
+@sprite .demoButtonQuiz:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoQuizActive';
+}
+
+@sprite .demoButtonAmazon {
+	border: none;
+	position: left;
+	gwt-image: 'demoAmazon';
+}
+
+@sprite .demoButtonAmazon:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoAmazonActive';
+}
+
+@sprite .demoButtonApple {
+	border: none;
+	position: left;
+	gwt-image: 'demoApple';
+}
+
+@sprite .demoButtonApple:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoAppleActive';
+}
+
+@sprite .demoButtonGoogle {
+	border: none;
+	position: left;
+	gwt-image: 'demoGoogle';
+}
+
+@sprite .demoButtonGoogle:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoGoogleActive';
+}
+
+@sprite .demoButtonWindows {
+	border: none;
+	position: left;
+	gwt-image: 'demoWindows';
+}
+
+@sprite .demoButtonWindows:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoWindowsActive';
+}
+
+@sprite .demoButtonBlackberry {
+	border: none;
+	position: left;
+	gwt-image: 'demoBlackberry';
+}
+
+@sprite .demoButtonBlackberry:hover {
+	border: none;
+	position: left;
+	gwt-image: 'demoBlackberryActive';
+}
+
+@sprite .gameView1x1 {
+	border: none;
+	position: left;
+	gwt-image: 'gameView1x1';
+}
+
+@sprite .gameView1x1:hover {
+	border: none;
+	position: left;
+	gwt-image: 'gameView1x1Active';
+}
+
+@sprite .gameView1x1Active {
+	border: none;
+	position: left;
+	gwt-image: 'gameView1x1Active';
+}
+
+@sprite .gameView2x2 {
+	border: none;
+	position: left;
+	gwt-image: 'gameView2x2';
+}
+
+@sprite .gameView2x2:hover {
+	border: none;
+	position: left;
+	gwt-image: 'gameView2x2Active';
+}
+
+@sprite .gameView2x2Active {
+	border: none;
+	position: left;
+	gwt-image: 'gameView2x2Active';
+}
+
+@sprite .gameView3x3 {
+	border: none;
+	position: left;
+	gwt-image: 'gameView3x3';
+}
+
+@sprite .gameView3x3:hover {
+	border: none;
+	position: left;
+	gwt-image: 'gameView3x3Active';
+}
+
+@sprite .gameView3x3Active {
+	border: none;
+	position: left;
+	gwt-image: 'gameView3x3Active';
+}
+
+@sprite .gameView4x4 {
+	border: none;
+	position: left;
+	gwt-image: 'gameView4x4';
+}
+
+@sprite .gameView4x4Active {
+	border: none;
+	position: left;
+	gwt-image: 'gameView4x4Active';
+}
+
+@sprite .miniGameView2x2 {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView2x2';
+}
+
+@sprite .miniGameView2x2:hover {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView2x2Active';
+}
+
+@sprite .miniGameView2x2Active {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView2x2Active';
+}
+
+@sprite .miniGameView3x3 {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView3x3';
+}
+
+@sprite .miniGameView3x3:hover {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView3x3Active';
+}
+
+@sprite .miniGameView3x3Active {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView3x3Active';
+}
+
+@sprite .miniGameView4x4 {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView4x4';
+}
+
+@sprite .miniGameView4x4:hover {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView4x4Active';
+}
+
+@sprite .miniGameView4x4Active {
+	border: none;
+	position: left;
+	gwt-image: 'miniGameView4x4Active';
+}
+
+@sprite .gamePrevButton {
+	border: none;
+	position: left;
+	gwt-image: 'gamePrevButton';
+}
+
+@sprite .gamePrevButtonDisable {
+	border: none;
+	position: left;
+	gwt-image: 'gamePrevButtonDisable';
+}
+
+@sprite .gameNextButton {
+	border: none;
+	position: left;
+	gwt-image: 'gameNextButton';
+}
+
+@sprite .gameNextButtonDisable {
+	border: none;
+	position: left;
+	gwt-image: 'gameNextButtonDisable';
+}
+
+@sprite .gamePrevButton {
+	border: none;
+	position: left;
+	gwt-image: 'gamePrevButton';
+}
+
+@sprite .gamePlayButton {
+	border: none;
+	position: left;
+	gwt-image: 'gamePlayButton';
+}
+
+@sprite .gamePauseButton {
+	border: none;
+	position: left;
+	gwt-image: 'gamePauseButton';
+}
+
+@sprite .fbShareWithFriend {
+	border: none;
+	position: left;
+	gwt-image: 'fbShareWithFriend';
+}
+
+@sprite .fbAddToTimeline {
+	border: none;
+	position: left;
+	gwt-image: 'fbAddToTimeLine';
+}
+
+@sprite .gameButtonSpelling {
+	border: none;
+	/*background: url('spelling.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpelling';
+}
+
+@sprite .gameButtonSpelling:hover {
+	border: none;
+	/*background: url('spelling-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingActive';
+}
+
+@sprite .gameButtonSpelling:active {
+	border: none;
+	/*background: url('spelling-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingActive';
+}
+
+@sprite .gameButtonActiveSpelling {
+	border: none;
+	/*background: url('spelling-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingActive';
+}
+
+@sprite .gameSpellingShow {
+	border: none;
+	/*background: url('spelling-show.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingShow';
+}
+
+@sprite .gameSpellingShow:hover {
+	border: none;
+	/*background: url('spelling-show-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingShowActive';
+}
+
+@sprite .gameSpellingShow:active {
+	border: none;
+	/*background: url('spelling-show-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingShowActive';
+}
+
+@sprite .gameActiveSpellingShow {
+	border: none;
+	/*background: url('spelling-show-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingShowActive';
+}
+
+ @sprite .gameSpellingBurn {
+	border: none;
+	/* background: url('spelling-burn.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingBurn';
+}
+
+@sprite .gameSpellingBurn:hover {
+	border: none;
+	/* background: url('spelling-burn-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingBurnActive';
+}
+
+@sprite .gameSpellingBurn:active {
+	border: none;
+	/* background: url('spelling-burn-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingBurnActive';
+}
+
+@sprite .gameActiveSpellingBurn {
+	border: none;
+	/*background: url('spelling-burn-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingBurnActive';
+}
+
+@sprite .gameSpellingGiveup {
+	border: none;
+	/* background: url('spelling-giveup.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingGiveup';
+}
+
+@sprite .gameSpellingGiveup:hover {
+	border: none;
+	/* background: url('spelling-giveup-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingGiveupActive';
+}
+
+@sprite .gameSpellingGiveup:active {
+	border: none;
+	/* background: url('spelling-giveup-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingGiveupActive';
+}
+
+@sprite .gameActiveSpellingGiveup {
+	border: none;
+	/*background: url('spelling-giveup-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingGiveupActive';
+}
+
+@sprite .gameSpellingRandom {
+	border: none;
+	/* background: url('spelling-random.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingRandom';
+}
+
+@sprite .gameSpellingRandom:hover {
+	border: none;
+	/* background: url('spelling-random-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingRandomActive';
+}
+
+@sprite .gameSpellingRandom:active {
+	border: none;
+	/* background: url('spelling-random-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingRandomActive';
+}
+
+@sprite .gameActiveSpellingRandom {
+	border: none;
+	/*background: url('spelling-random-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingRandomActive';
+}
+
+@sprite .gameSpellingNext {
+	border: none;
+	/* background: url('spelling-next.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingNext';
+}
+
+@sprite .gameSpellingNext:hover {
+	border: none;
+	/* background: url('spelling-next-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingNextActive';
+}
+
+@sprite .gameSpellingNext:active {
+	border: none;
+	/* background: url('spelling-next-active.png') no-repeat left; */
+	position: left;
+	gwt-image: 'gameSpellingNextActive';
+}
+
+@sprite .gameActiveSpellingNext {
+	border: none;
+	/*background: url('spelling-next-active.png') no-repeat left;*/
+	position: left;
+	gwt-image: 'gameSpellingNextActive';
+}
+
+@sprite .gameButtonRephrase {
+	border: none;
+	position: left;
+	gwt-image: 'gameRephrase';
+}
+
+@sprite .gameButtonRephrase:hover {
+	border: none;
+	position: left;
+	gwt-image: 'gameRephraseActive';
+}
+
+@sprite .gameButtonRephrase:active {
+	border: none;
+	position: left;
+	gwt-image: 'gameRephraseActive';
+}
+
+@sprite .gameButtonActiveRephrase {
+	border: none;
+	position: left;
+	gwt-image: 'gameRephraseActive';
+}
+
+@sprite .gameSettingButton {
+	border: none;
+	position: center;
+	gwt-image: 'gameSettingButton';
+}
+
+@sprite .gameSettingButton:hover {
+	border: none;
+	position: left;
+	gwt-image: 'gameSettingActiveButton';
+}
+
+@sprite .gameSettingButton:active {
+	border: none;
+	position: left;
+	gwt-image: 'gameSettingActiveButton';
+}
+
+@sprite .gameSettingButtonActive {
+	border: none;
+	position: left;
+	gwt-image: 'gameSettingActiveButton';
+}
+
+@sprite .feedBackBtn{
+	border: none;
+	position: center;
+	gwt-image: 'feedbackButton';
+}
+
+@sprite .feedBackBtn:hover {
+	border: none;
+	position: left;
+	gwt-image: 'feedbackActiveButton';
+}
+
+@sprite .feedBackBtn:active {
+	border: none;
+	position: left;
+	gwt-image: 'feedbackActiveButton';
+}
+
+@sprite .feedBackActiveBtn {
+	border: none;
+	position: left;
+	gwt-image: 'feedbackActiveButton';
+}
+
+@sprite .upBtn{
+	border: none;
+	position: center;
+	gwt-image: 'upMiniButton';
+}
+
+@sprite .upBtn:hover {
+	border: none;
+	position: left;
+	gwt-image: 'upButton';
+}
+
+@sprite .upBtn:active {
+	border: none;
+	position: left;
+	gwt-image: 'upButton';
+}
+
+@sprite .upActiveBtn {
+	border: none;
+	position: left;
+	gwt-image: 'upButton';
+}
+
+@sprite .downBtn{
+	border: none;
+	position: center;
+	gwt-image: 'downMiniButton';
+}
+
+@sprite .downBtn:hover {
+	border: none;
+	position: left;
+	gwt-image: 'downButton';
+}
+
+@sprite .downBtn:active {
+	border: none;
+	position: left;
+	gwt-image: 'downButton';
+}
+
+@sprite .downActiveBtn {
+	border: none;
+	position: left;
+	gwt-image: 'downButton';
+}
